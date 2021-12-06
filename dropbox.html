@@ -70,7 +70,7 @@
   </div>
     <div class="dropdown">
 <br><br><br><br><br><br>
-  <button onclick="myFunction()" class="dropbtn">Select a speech </button>
+  <button onclick="myFunction()" class="dropbtn123">Select a speech </button>
 
   <div id="myDropdown" class="dropdown-content">
 
@@ -113,6 +113,45 @@ window.onclick = function(event) {
     }
   }
 }
+</script>
+    
+    
+    
+    
+    <script>
+
+function myFunction() {
+
+  document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+// Close the dropdown menu if the user clicks outside of it
+
+window.onclick = function(event) {
+
+  if (!event.target.matches('.dropbtn123')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+
+      var openDropdown = dropdowns[i];
+
+      if (openDropdown.classList.contains('show')) {
+
+        openDropdown.classList.remove('show');
+
+      }
+
+    }
+
+  }
+
+}
+
 </script>
 
 </body>
